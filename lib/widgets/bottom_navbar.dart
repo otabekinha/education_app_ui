@@ -43,8 +43,7 @@ class BottomNavbar extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(width: 10), // Space between the two containers
-          // Chat icon container
+          SizedBox(width: 10),
           Container(
             height: 80,
             width: 90,
@@ -60,7 +59,11 @@ class BottomNavbar extends StatelessWidget {
                 ),
               ],
             ),
-            child: Icon(HugeIcons.strokeRoundedMessage01, size: 30),
+            child: Transform(
+              alignment: Alignment.center,
+              transform: Matrix4.rotationY(3.14159),
+              child: Icon(HugeIcons.strokeRoundedMessage01, size: 30),
+            ),
           ),
         ],
       ),
