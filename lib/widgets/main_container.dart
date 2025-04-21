@@ -65,7 +65,7 @@ class MainContainer extends StatelessWidget {
             style: TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.w300,
-              color: Colors.grey.withOpacity(0.6),
+              color: Colors.transparent.withValues(alpha: 0.4),
             ),
           ),
           const SizedBox(height: 20),
